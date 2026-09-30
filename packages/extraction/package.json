@@ -1,0 +1,14 @@
+{
+  "name": "@app/extraction",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@app/domain": "workspace:*",
+    "mammoth": "^1.12.3",
+    "unpdf": "^1.8.1"
+  }
+}

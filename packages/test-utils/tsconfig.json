@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "emitDeclarationOnly": true,
+    "noEmit": false,
+    "outDir": "../../node_modules/.tsbuild/test-utils"
+  },
+  "include": ["src"],
+  "references": [{ "path": "../db" }, { "path": "../domain" }]
+}

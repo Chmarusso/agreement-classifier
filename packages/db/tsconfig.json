@@ -1,0 +1,6 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "composite": true, "emitDeclarationOnly": true, "noEmit": false, "outDir": "../../node_modules/.tsbuild/db" },
+  "include": ["src", "drizzle.config.ts"],
+  "references": [{ "path": "../domain" }]
+}
