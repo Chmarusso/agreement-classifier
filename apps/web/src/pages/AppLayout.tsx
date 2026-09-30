@@ -63,7 +63,7 @@ export function AppLayout() {
       <header className="sticky top-0 z-30 border-b border-line bg-white/90 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-6xl items-center gap-3 px-4 sm:gap-6 sm:px-6">
           <Link to="/" className="flex shrink-0 items-center gap-3 font-semibold">
-            <img src="/logo.svg" alt="YourCompany" width={97} height={24} />
+            <span className="text-lg font-semibold tracking-tight text-ink">YourCompany</span>
             <span className="hidden border-l border-line pl-3 text-sm text-muted sm:inline">{APP_NAME}</span>
           </Link>
           <nav aria-label="Main" className="-mx-1 flex min-w-0 flex-1 items-center gap-1 overflow-x-auto px-1">

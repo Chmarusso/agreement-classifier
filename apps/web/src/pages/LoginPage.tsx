@@ -58,7 +58,7 @@ export function LoginPage() {
     <main className="flex min-h-screen items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="mb-8 flex flex-col gap-4">
-          <img src="/logo.svg" alt="YourCompany" width={149} height={37} />
+          <span className="text-3xl font-semibold tracking-tight text-ink">YourCompany</span>
           <div>
             <h1 className="text-lg font-semibold leading-tight">{APP_NAME}</h1>
             <p className="text-sm text-muted">Sign in with a one-time code</p>
