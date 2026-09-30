@@ -1,0 +1,35 @@
+{
+  "slug": "employment-noncompete-too-long",
+  "title": "Employment contract: Katarzyna Wiśniewska",
+  "type": "Employment",
+  "file": "employment-noncompete-too-long.pdf",
+  "description": "Post-employment non-compete of 24 months against a 6-month limit.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "fail",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "ip-assignment": {
+        "status": "pass"
+      },
+      "non-compete-limit": {
+        "status": "fail",
+        "quote": "twenty-four (24) months"
+      },
+      "gdpr-data-processing": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "file": "pl-nda-spolki.txt",
+  "slug": "pl-nda-spolki",
+  "title": "Umowa o zachowaniu poufności – Wisła Data Solutions S.A.",
+  "type": "NDA",
+  "format": "txt",
+  "language": "pl",
+  "focus": "Companies only: KRS, NIP and REGON in different notations, board members, landline in brackets, the company's own name on the keep list.",
+  "mustReplace": [
+    "Wisła Data Solutions S.A.",
+    "Annę Kowalską",
+    "Anna Kowalska",
+    "Jana Nowaka",
+    "Jan Nowak",
+    "Ewę Lewandowską",
+    "Ewa Lewandowska",
+    "ewa.lewandowska@wisla-data.example",
+    "(12) 345 67 89",
+    "526-025-02-74",
+    "677-22-46-017",
+    "123456785",
+    "356000122",
+    "0000654321",
+    "ul. Długa 15"
+  ],
+  "mustKeep": ["Northwind Analytics", "pięć (5) lat", "200 000 zł", "Sąd Okręgowy w Warszawie", "prawu polskiemu"]
+}

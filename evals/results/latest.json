@@ -1,0 +1,1672 @@
+{
+  "updatedAt": "2026-09-25T18:59:39.040Z",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "lastRunId": "2026-09-25T18-59-39-034Z",
+  "results": [
+    {
+      "slug": "nda-compliant",
+      "title": "NDA with Keller Data GmbH",
+      "attempts": 1,
+      "costUsd": 0.00025398,
+      "durationMs": 10692,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement expressly states it is governed by the laws of Poland."
+        },
+        {
+          "rule": "liability-cap",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement caps each party's total liability at PLN 200,000, which is below the PLN 500,000 fixed cap allowed for agreements without fees. The exception for wilful misconduct or gross negligence is permitted."
+        },
+        {
+          "rule": "termination-notice",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement grants either party the right to terminate for convenience at any time with at least 30 days' written notice. There is no minimum commitment period or other restriction."
+        },
+        {
+          "rule": "confidentiality-term",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Confidentiality obligations survive for five years after termination or expiry, which exceeds the required three years."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Disputes are to be resolved by the common court competent for Warsaw, Poland, which satisfies the requirement for resolution by common courts in Warsaw."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the person signing for each party and states their title or role."
+        }
+      ],
+      "rulesCorrect": 6,
+      "evidenceVerified": "6/6",
+      "citationsExact": "6/6",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "pass",
+      "gotVerdict": "pass",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "nda-missing-governing-law",
+      "title": "NDA with Brightline Research Ltd",
+      "attempts": 1,
+      "costUsd": 0.000593162,
+      "durationMs": 27439,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "fail",
+          "accepted": [
+            "fail"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement does not contain any governing law clause. The requirement is that the agreement must expressly state it is governed by the laws of Poland. Since no such clause exists, the rule fails."
+        },
+        {
+          "rule": "liability-cap",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The liability clause caps each party's total liability at PLN 200,000, which is below the maximum allowed fixed cap of PLN 500,000 for agreements without fees. The exception for wilful misconduct or gross negligence is permitted. Therefore, the rule is satisfied."
+        },
+        {
+          "rule": "termination-notice",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The termination clause grants either party the right to terminate for convenience at any time with at least 30 days' written notice. There is no minimum commitment period or other restriction on the Company's right. The rule is satisfied."
+        },
+        {
+          "rule": "confidentiality-term",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The confidentiality obligations survive for five years after termination or expiry, which is longer than the required three years. The rule is satisfied."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The dispute resolution clause requires disputes to be resolved by the common court competent for Warsaw, Poland, which satisfies the requirement of resolution by common courts in Warsaw."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the person signing for each party and states their title or role. The rule is satisfied."
+        }
+      ],
+      "rulesCorrect": 6,
+      "evidenceVerified": "5/5",
+      "citationsExact": "5/5",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "fail",
+      "gotVerdict": "fail",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "nda-missing-signature-titles",
+      "title": "NDA with Fjord Metrics AS",
+      "attempts": 1,
+      "costUsd": 0.000568278,
+      "durationMs": 26265,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement expressly states it is governed by the laws of Poland."
+        },
+        {
+          "rule": "liability-cap",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The liability cap is PLN 200,000, which is below the PLN 500,000 threshold for agreements without fees. The exception for wilful misconduct or gross negligence is permitted."
+        },
+        {
+          "rule": "termination-notice",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The clause grants either party the right to terminate for convenience at any time with at least 30 days' written notice. No minimum commitment period or other restriction is present."
+        },
+        {
+          "rule": "confidentiality-term",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Confidentiality obligations survive for 5 years, which is at least 3 years as required."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Disputes are to be resolved by the common court in Warsaw, Poland, which satisfies the requirement."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "fail",
+          "accepted": [
+            "fail",
+            "partial"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the person signing for each party but does not state their title or role."
+        }
+      ],
+      "rulesCorrect": 6,
+      "evidenceVerified": "7/7",
+      "citationsExact": "7/7",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "warn",
+      "gotVerdict": "warn",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "msa-compliant",
+      "title": "MSA with Delta Data Engineering B.V.",
+      "attempts": 1,
+      "costUsd": 0.00100475,
+      "durationMs": 23820,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement expressly states it is governed by the laws of Poland."
+        },
+        {
+          "rule": "liability-cap",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The liability cap is exactly the fees paid or payable in the 12 months before the claim, and the only exception is for wilful misconduct or gross negligence, which is permitted."
+        },
+        {
+          "rule": "termination-notice",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement grants either party the right to terminate for convenience at any time with at least 60 days' notice, which exceeds the required 30 days. There is no minimum commitment period or other restriction."
+        },
+        {
+          "rule": "payment-terms",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Invoices are payable within 45 days, which is within the maximum of 60 days."
+        },
+        {
+          "rule": "confidentiality-term",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Confidentiality obligations survive for exactly 3 years after termination, meeting the minimum requirement."
+        },
+        {
+          "rule": "ip-assignment",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "IP created by the Supplier in performing the agreement is assigned to the Company on creation, satisfying the requirement."
+        },
+        {
+          "rule": "gdpr-data-processing",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement references a signed Data Processing Agreement that meets Article 28 GDPR requirements, which is sufficient."
+        },
+        {
+          "rule": "no-auto-renewal",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement does not renew automatically; it ends unless the parties agree in writing to extend it. Therefore, no opt-out is needed."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Disputes are to be resolved by arbitration seated in Poland (Warsaw), which satisfies the requirement."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the person signing for each party and states their title or role."
+        },
+        {
+          "rule": "insurance",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The supplier must maintain professional liability insurance of at least EUR 2,000,000, which exceeds the required EUR 1,000,000, for the entire term."
+        }
+      ],
+      "rulesCorrect": 11,
+      "evidenceVerified": "11/11",
+      "citationsExact": "11/11",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "pass",
+      "gotVerdict": "pass",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "msa-multiple-failures",
+      "title": "MSA with Apex Consulting Group Inc.",
+      "attempts": 1,
+      "costUsd": 0.00097936,
+      "durationMs": 25814,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement expressly states it is governed by the laws of Poland."
+        },
+        {
+          "rule": "liability-cap",
+          "expected": "fail",
+          "accepted": [
+            "fail"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": "liability of either party under this Agreement is unlimited",
+          "quoteFound": true,
+          "explanation": "The agreement explicitly states unlimited liability, which contradicts the requirement for a cap. No exception for wilful misconduct or gross negligence is mentioned."
+        },
+        {
+          "rule": "termination-notice",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement grants termination for convenience with 60 days' notice, which exceeds the required 30 days. There is no minimum commitment period or suspension of the right."
+        },
+        {
+          "rule": "payment-terms",
+          "expected": "fail",
+          "accepted": [
+            "fail"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": "ninety (90) days",
+          "quoteFound": true,
+          "explanation": "The payment term is 90 days, which exceeds the maximum allowed 60 days."
+        },
+        {
+          "rule": "confidentiality-term",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Confidentiality obligations survive for exactly 3 years after termination, meeting the minimum requirement."
+        },
+        {
+          "rule": "ip-assignment",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement assigns all IP created by the Supplier to the Company, satisfying the requirement."
+        },
+        {
+          "rule": "gdpr-data-processing",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement references a signed Data Processing Agreement that meets Article 28 GDPR requirements, satisfying the rule."
+        },
+        {
+          "rule": "no-auto-renewal",
+          "expected": "fail",
+          "accepted": [
+            "fail"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": "renews automatically",
+          "quoteFound": true,
+          "explanation": "The agreement renews automatically and explicitly states that neither party may prevent renewal, so there is no opt-out notice."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Disputes are to be resolved by arbitration seated in Warsaw, Poland, which meets the requirement."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the signatories and their titles for both parties."
+        },
+        {
+          "rule": "insurance",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The supplier must maintain professional liability insurance of at least EUR 2,000,000, which exceeds the required EUR 1,000,000."
+        }
+      ],
+      "rulesCorrect": 11,
+      "evidenceVerified": "11/11",
+      "citationsExact": "11/11",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "fail",
+      "gotVerdict": "fail",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "msa-medium-issues",
+      "title": "MSA with Harbor Analytics LLC",
+      "attempts": 1,
+      "costUsd": 0.00096596,
+      "durationMs": 22813,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement expressly states it is governed by the laws of Poland."
+        },
+        {
+          "rule": "liability-cap",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The liability cap is exactly the fees paid or payable in the 12 months before the claim, with an exception for wilful misconduct or gross negligence, which is permitted."
+        },
+        {
+          "rule": "termination-notice",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement grants either party the right to terminate for convenience at any time with at least 60 days' notice, which exceeds the required 30 days. There is no minimum commitment period or other restriction."
+        },
+        {
+          "rule": "payment-terms",
+          "expected": "fail",
+          "accepted": [
+            "fail"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": "ninety (90) days",
+          "quoteFound": true,
+          "explanation": "The payment term is 90 days, which exceeds the maximum allowed 60 days."
+        },
+        {
+          "rule": "confidentiality-term",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Confidentiality obligations survive for exactly 3 years after termination, meeting the minimum requirement."
+        },
+        {
+          "rule": "ip-assignment",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "IP created by the Supplier in performing the agreement is assigned to the Company on creation."
+        },
+        {
+          "rule": "gdpr-data-processing",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement refers to a signed Data Processing Agreement that meets Article 28 GDPR requirements, satisfying the rule."
+        },
+        {
+          "rule": "no-auto-renewal",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement does not renew automatically; it ends unless both parties agree in writing to extend it."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Disputes are resolved by arbitration seated in Poland (Warsaw), which satisfies the rule."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the person signing for each party and states their title."
+        },
+        {
+          "rule": "insurance",
+          "expected": "fail",
+          "accepted": [
+            "fail",
+            "partial"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": "EUR 500,000",
+          "quoteFound": true,
+          "explanation": "The required insurance coverage is EUR 500,000, which is below the required EUR 1,000,000."
+        }
+      ],
+      "rulesCorrect": 11,
+      "evidenceVerified": "12/12",
+      "citationsExact": "12/12",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "warn",
+      "gotVerdict": "warn",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "saas-auto-renewal",
+      "title": "SaaS subscription with CloudPanel Oy",
+      "attempts": 1,
+      "costUsd": 0.0003027,
+      "durationMs": 9124,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement expressly states it is governed by the laws of Poland."
+        },
+        {
+          "rule": "liability-cap",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Each party's aggregate liability is capped at fees paid or payable in the 12 months preceding the claim, with an exception for wilful misconduct or gross negligence, which is permitted."
+        },
+        {
+          "rule": "termination-notice",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Either party may terminate for convenience on 30 days' written notice, and there is no minimum commitment period or other restriction on the Company's right."
+        },
+        {
+          "rule": "payment-terms",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Invoices are payable within 30 days of receipt, which is within the 60-day maximum."
+        },
+        {
+          "rule": "gdpr-data-processing",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The Provider processes personal data as processor, and the agreement incorporates a Data Processing Addendum that follows Article 28 GDPR."
+        },
+        {
+          "rule": "no-auto-renewal",
+          "expected": "fail",
+          "accepted": [
+            "fail"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": "renews automatically",
+          "quoteFound": true,
+          "explanation": "The agreement renews automatically and explicitly states that renewals cannot be cancelled, so the Company has no opt-out right."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Disputes are to be resolved by the common courts in Warsaw, which satisfies the requirement."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the person signing for each party and states their title."
+        }
+      ],
+      "rulesCorrect": 8,
+      "evidenceVerified": "8/8",
+      "citationsExact": "8/8",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "fail",
+      "gotVerdict": "fail",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "employment-compliant",
+      "title": "Employment contract: Piotr Zieliński",
+      "attempts": 1,
+      "costUsd": 0.000664534,
+      "durationMs": 16622,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement expressly states it is governed by the laws of Poland."
+        },
+        {
+          "rule": "confidentiality-term",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Confidentiality obligations continue for exactly 3 years after employment ends, meeting the minimum requirement."
+        },
+        {
+          "rule": "ip-assignment",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "IP created by the employee in performing the agreement is assigned to the Company on creation."
+        },
+        {
+          "rule": "non-compete-limit",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The post-employment non-compete lasts 6 months and pays compensation of 25% of salary, satisfying the rule."
+        },
+        {
+          "rule": "gdpr-data-processing",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "As an employment agreement, it contains an information clause on processing the employee's personal data, including legal basis and rights."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Disputes are to be resolved by the common courts in Warsaw, satisfying the rule."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the person signing for each party and states their title or role."
+        }
+      ],
+      "rulesCorrect": 7,
+      "evidenceVerified": "7/7",
+      "citationsExact": "7/7",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "pass",
+      "gotVerdict": "pass",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "employment-noncompete-too-long",
+      "title": "Employment contract: Katarzyna Wiśniewska",
+      "attempts": 1,
+      "costUsd": 0.0006798,
+      "durationMs": 17812,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement expressly states it is governed by the laws of Poland."
+        },
+        {
+          "rule": "confidentiality-term",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Confidentiality obligations continue for exactly 3 years after employment ends, meeting the minimum requirement."
+        },
+        {
+          "rule": "ip-assignment",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "IP created by the Employee in performing the agreement is assigned to the Company on creation."
+        },
+        {
+          "rule": "non-compete-limit",
+          "expected": "fail",
+          "accepted": [
+            "fail"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": "twenty-four (24) months",
+          "quoteFound": true,
+          "explanation": "The post-employment non-compete lasts 24 months, exceeding the maximum allowed 6 months. Although compensation is 25%, the duration violates the rule."
+        },
+        {
+          "rule": "gdpr-data-processing",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "This is an employment agreement, and it contains an information clause on processing the employee's personal data, including legal basis and rights."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Disputes are to be resolved by the common courts in Warsaw, satisfying the requirement."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the person signing for each party and states their title or role."
+        }
+      ],
+      "rulesCorrect": 7,
+      "evidenceVerified": "7/7",
+      "citationsExact": "7/7",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "fail",
+      "gotVerdict": "fail",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "employment-ambiguous-ip",
+      "title": "Employment contract: Michał Lewandowski",
+      "attempts": 1,
+      "costUsd": 0.000673658,
+      "durationMs": 17460,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement expressly states it is governed by the laws of Poland."
+        },
+        {
+          "rule": "confidentiality-term",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Confidentiality obligations continue for exactly 3 years after employment ends, meeting the minimum requirement."
+        },
+        {
+          "rule": "ip-assignment",
+          "expected": "unclear",
+          "accepted": [
+            "unclear",
+            "partial"
+          ],
+          "got": "pass",
+          "ok": false,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "IP created by the employee in the course of employment is assigned to the Company on creation."
+        },
+        {
+          "rule": "non-compete-limit",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The non-compete lasts exactly 6 months and pays 25% of salary, satisfying the rule."
+        },
+        {
+          "rule": "gdpr-data-processing",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement contains an information clause on processing the employee's personal data, as required for employment agreements."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Disputes are to be resolved by the common courts in Warsaw, satisfying the rule."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the person signing for each party and states their title."
+        }
+      ],
+      "rulesCorrect": 6,
+      "evidenceVerified": "7/7",
+      "citationsExact": "7/7",
+      "voted": [],
+      "ok": false,
+      "expectedVerdict": "warn",
+      "gotVerdict": "pass",
+      "verdictOk": false,
+      "error": null
+    },
+    {
+      "slug": "injection-attempt",
+      "title": "NDA with Quillon Ventures",
+      "attempts": 1,
+      "costUsd": 0.000554028,
+      "durationMs": 14323,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement expressly states it is governed by the laws of Poland."
+        },
+        {
+          "rule": "liability-cap",
+          "expected": "fail",
+          "accepted": [
+            "fail"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement contains no liability clause at all. The rule requires a liability cap; a missing liability clause fails."
+        },
+        {
+          "rule": "termination-notice",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement grants either party the right to terminate for convenience at any time with at least 30 days' written notice. No minimum commitment period or other restriction is present."
+        },
+        {
+          "rule": "confidentiality-term",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Confidentiality obligations survive for 5 years after termination or expiry, which is at least 3 years as required."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Disputes are to be resolved by the common court competent for Warsaw, Poland, which satisfies the requirement of common courts in Warsaw."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the person signing for each party and states their title or role."
+        }
+      ],
+      "rulesCorrect": 6,
+      "evidenceVerified": "6/6",
+      "citationsExact": "6/6",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "fail",
+      "gotVerdict": "fail",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "scanned-no-text-layer",
+      "title": "Scanned NDA (image only)",
+      "attempts": 0,
+      "costUsd": 0,
+      "durationMs": 0,
+      "rules": [],
+      "rulesCorrect": 0,
+      "evidenceVerified": "-",
+      "citationsExact": "-",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "extraction_failed",
+      "gotVerdict": "extraction_failed",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "long-msa-deep-medium-issues",
+      "title": "MSA with Orbital Systems Integration S.A.",
+      "attempts": 1,
+      "costUsd": 0.00139957,
+      "durationMs": 27519,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement expressly states it is governed by the laws of Poland."
+        },
+        {
+          "rule": "liability-cap",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The liability cap is exactly the fees paid or payable in the 12 months before the claim, as required. Exclusions for wilful misconduct and gross negligence are permitted."
+        },
+        {
+          "rule": "termination-notice",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Both parties can terminate for convenience at any time with 90 days' notice, which exceeds the required 30 days. There is no minimum commitment period."
+        },
+        {
+          "rule": "payment-terms",
+          "expected": "fail",
+          "accepted": [
+            "fail"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": "seventy-five (75) days",
+          "quoteFound": true,
+          "explanation": "The payment term is 75 days, which exceeds the maximum allowed 60 days."
+        },
+        {
+          "rule": "confidentiality-term",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Confidentiality obligations survive for 5 years, which is at least 3 years as required."
+        },
+        {
+          "rule": "ip-assignment",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "IP in deliverables is assigned to the Company on creation, satisfying the requirement."
+        },
+        {
+          "rule": "gdpr-data-processing",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement includes data processing terms in Schedule 5 that meet Article 28 GDPR requirements, as the counterparty processes personal data for the Company."
+        },
+        {
+          "rule": "no-auto-renewal",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement does not renew automatically; it ends unless both parties agree to extend in writing at least 60 days before expiry. This satisfies the rule."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Disputes are resolved by arbitration seated in Warsaw, Poland, which satisfies the requirement."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the signatories and their titles for both parties."
+        },
+        {
+          "rule": "insurance",
+          "expected": "fail",
+          "accepted": [
+            "fail",
+            "partial"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": "EUR 250,000",
+          "quoteFound": true,
+          "explanation": "The professional indemnity insurance limit is EUR 250,000, which is below the required EUR 1,000,000."
+        }
+      ],
+      "rulesCorrect": 11,
+      "evidenceVerified": "13/13",
+      "citationsExact": "13/13",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "warn",
+      "gotVerdict": "warn",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "long-msa-compliant",
+      "title": "MSA with Lindqvist Data Services AB",
+      "attempts": 1,
+      "costUsd": 0.00144229,
+      "durationMs": 28945,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The governing law clause expressly states that the agreement is governed by the laws of Poland."
+        },
+        {
+          "rule": "liability-cap",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The liability cap is set at the fees paid or payable in the 12 months before the claim, which meets the requirement. The clause also excludes liability for wilful misconduct or gross negligence, which is permitted."
+        },
+        {
+          "rule": "termination-notice",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement grants either party the right to terminate for convenience with at least 90 days' notice, which exceeds the required 30 days. There is no minimum commitment period or other restriction on the Company's right."
+        },
+        {
+          "rule": "payment-terms",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The payment term is 45 days, which is within the maximum of 60 days."
+        },
+        {
+          "rule": "confidentiality-term",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Confidentiality obligations survive for 5 years after termination, which is more than the required 3 years."
+        },
+        {
+          "rule": "ip-assignment",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement assigns all IP in the Deliverables to the Company, satisfying the requirement."
+        },
+        {
+          "rule": "gdpr-data-processing",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement contains data processing terms in Schedule 5 that are stated to meet Article 28 GDPR requirements, and the Supplier is a Processor. This satisfies the rule."
+        },
+        {
+          "rule": "no-auto-renewal",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement does not renew automatically; it ends unless both parties agree to extend in writing at least 60 days before expiry. This is not an automatic renewal, so the rule is satisfied."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Disputes are to be resolved by arbitration seated in Warsaw, Poland, which satisfies the requirement for arbitration seated in Poland."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the signatories and their titles for both parties."
+        },
+        {
+          "rule": "insurance",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The supplier must maintain professional indemnity insurance of at least EUR 2,000,000, which exceeds the required EUR 1,000,000. The insurance is required for the duration of the agreement."
+        }
+      ],
+      "rulesCorrect": 11,
+      "evidenceVerified": "13/13",
+      "citationsExact": "13/13",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "pass",
+      "gotVerdict": "pass",
+      "verdictOk": true,
+      "error": null
+    },
+    {
+      "slug": "long-saas-termination-override",
+      "title": "Enterprise Subscription Agreement with CloudVista GmbH",
+      "attempts": 1,
+      "costUsd": 0.00089598,
+      "durationMs": 14091,
+      "rules": [
+        {
+          "rule": "governing-law",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Section 31.1 expressly states the agreement is governed by the laws of Poland."
+        },
+        {
+          "rule": "liability-cap",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Section 13.2 caps each party's total liability to the Charges paid or payable in the 12 months preceding the claim, which is within the allowed cap. Exclusions for wilful misconduct and gross negligence are permitted."
+        },
+        {
+          "rule": "termination-notice",
+          "expected": "fail",
+          "accepted": [
+            "fail"
+          ],
+          "got": "fail",
+          "ok": true,
+          "quoteExpected": "may not terminate this Agreement for convenience during the Minimum Commitment Period",
+          "quoteFound": true,
+          "explanation": "Although clause 15.1 grants either party termination for convenience with 30 days' notice, Schedule 6 clause 6.3 suspends the Company's right during a 36-month Minimum Commitment Period, which is a minimum commitment period that fails the rule."
+        },
+        {
+          "rule": "payment-terms",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Section 5.2 states invoices are payable within 30 days of receipt, which is within the 60-day maximum."
+        },
+        {
+          "rule": "gdpr-data-processing",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement contains a data processing addendum in Schedule 5 that meets Article 28 GDPR requirements, and the parties acknowledge the Company is Controller and Provider is Processor."
+        },
+        {
+          "rule": "no-auto-renewal",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The agreement renews automatically but allows either party to prevent renewal by written notice at least 60 days before the end of the term, which exceeds the 30-day minimum."
+        },
+        {
+          "rule": "dispute-resolution",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "Section 32.2 submits disputes to the exclusive jurisdiction of the common courts competent for Warsaw, Poland, which satisfies the requirement."
+        },
+        {
+          "rule": "signature-authority",
+          "expected": "pass",
+          "accepted": [
+            "pass"
+          ],
+          "got": "pass",
+          "ok": true,
+          "quoteExpected": null,
+          "quoteFound": null,
+          "explanation": "The signature block names the person signing for each party and states their title."
+        }
+      ],
+      "rulesCorrect": 8,
+      "evidenceVerified": "9/9",
+      "citationsExact": "9/9",
+      "voted": [],
+      "ok": true,
+      "expectedVerdict": "fail",
+      "gotVerdict": "fail",
+      "verdictOk": true,
+      "error": null
+    }
+  ]
+}

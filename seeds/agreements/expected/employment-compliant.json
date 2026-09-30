@@ -1,0 +1,34 @@
+{
+  "slug": "employment-compliant",
+  "title": "Employment contract: Piotr Zieliński",
+  "type": "Employment",
+  "file": "employment-compliant.docx",
+  "description": "Every applicable rule is satisfied, including a 6-month paid non-compete.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "pass",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "ip-assignment": {
+        "status": "pass"
+      },
+      "non-compete-limit": {
+        "status": "pass"
+      },
+      "gdpr-data-processing": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      }
+    }
+  }
+}

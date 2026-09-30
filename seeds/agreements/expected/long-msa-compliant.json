@@ -1,0 +1,46 @@
+{
+  "slug": "long-msa-compliant",
+  "title": "MSA with Lindqvist Data Services AB",
+  "type": "MSA",
+  "file": "long-msa-compliant.pdf",
+  "description": "The same long MSA with compliant schedules (45-day payment, EUR 2,000,000 cover). Checks for false alarms on long text.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "pass",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "liability-cap": {
+        "status": "pass"
+      },
+      "termination-notice": {
+        "status": "pass"
+      },
+      "payment-terms": {
+        "status": "pass"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "ip-assignment": {
+        "status": "pass"
+      },
+      "gdpr-data-processing": {
+        "status": "pass"
+      },
+      "no-auto-renewal": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      },
+      "insurance": {
+        "status": "pass"
+      }
+    }
+  }
+}

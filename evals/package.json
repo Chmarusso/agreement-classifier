@@ -1,0 +1,13 @@
+{
+  "name": "@app/evals",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@app/anonymization": "workspace:*",
+    "@app/domain": "workspace:*",
+    "@app/extraction": "workspace:*",
+    "@app/llm": "workspace:*",
+    "@app/seeds": "workspace:*"
+  }
+}

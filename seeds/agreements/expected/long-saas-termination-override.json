@@ -1,0 +1,38 @@
+{
+  "slug": "long-saas-termination-override",
+  "title": "Enterprise Subscription Agreement with CloudVista GmbH",
+  "type": "SaaS",
+  "file": "long-saas-termination-override.pdf",
+  "description": "Long SaaS agreement. Clause 15.1 allows termination for convenience on 30 days' notice, but Special Conditions 6.3 on the last page removes that right for 36 months. The high rule fails, so the verdict is fail.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "fail",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "liability-cap": {
+        "status": "pass"
+      },
+      "termination-notice": {
+        "status": "fail",
+        "quote": "may not terminate this Agreement for convenience during the Minimum Commitment Period"
+      },
+      "payment-terms": {
+        "status": "pass"
+      },
+      "gdpr-data-processing": {
+        "status": "pass"
+      },
+      "no-auto-renewal": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      }
+    }
+  }
+}

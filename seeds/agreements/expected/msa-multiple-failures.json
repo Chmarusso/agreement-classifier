@@ -1,0 +1,49 @@
+{
+  "slug": "msa-multiple-failures",
+  "title": "MSA with Apex Consulting Group Inc.",
+  "type": "MSA",
+  "file": "msa-multiple-failures.docx",
+  "description": "Unlimited liability (critical), automatic renewal without opt-out (high), 90-day payment (medium).",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "fail",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "liability-cap": {
+        "status": "fail",
+        "quote": "liability of either party under this Agreement is unlimited"
+      },
+      "termination-notice": {
+        "status": "pass"
+      },
+      "payment-terms": {
+        "status": "fail",
+        "quote": "ninety (90) days"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "ip-assignment": {
+        "status": "pass"
+      },
+      "gdpr-data-processing": {
+        "status": "pass"
+      },
+      "no-auto-renewal": {
+        "status": "fail",
+        "quote": "renews automatically"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      },
+      "insurance": {
+        "status": "pass"
+      }
+    }
+  }
+}

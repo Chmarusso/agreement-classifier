@@ -1,0 +1,24 @@
+{
+  "file": "en-consulting-agreement-uk.pdf",
+  "slug": "en-consulting-agreement-uk",
+  "title": "Consulting Agreement – Acme Consulting Ltd",
+  "type": "MSA",
+  "format": "pdf",
+  "language": "en",
+  "focus": "UK style: company number, VAT number, National Insurance number, postcode, +44 phone, IBAN, surname-only references.",
+  "mustReplace": [
+    "Acme Consulting Ltd",
+    "John Smith",
+    "Mr Smith",
+    "Anna Kowalska",
+    "01234567",
+    "GB123456789",
+    "QQ123456C",
+    "221B Baker Street",
+    "NW1 6XE",
+    "GB82 WEST 1234 5698 7654 32",
+    "john.smith@acme-consulting.example",
+    "+44 20 7946 0958"
+  ],
+  "mustKeep": ["GBP 950 per day", "thirty (30) days", "laws of Poland", "Northwind Analytics", "5 October 2026"]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "scanned-no-text-layer",
+  "title": "Scanned NDA (image only)",
+  "type": "NDA",
+  "file": "scanned-no-text-layer.pdf",
+  "description": "A PDF with no text layer. Extraction must fail with no_text_layer; no model call is made.",
+  "expected": {
+    "extraction": "failed",
+    "reason": "no_text_layer"
+  }
+}

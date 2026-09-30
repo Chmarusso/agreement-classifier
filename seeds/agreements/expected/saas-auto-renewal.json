@@ -1,0 +1,38 @@
+{
+  "slug": "saas-auto-renewal",
+  "title": "SaaS subscription with CloudPanel Oy",
+  "type": "SaaS",
+  "file": "saas-auto-renewal.pdf",
+  "description": "Single high failure: renews automatically with no way for the Company to opt out.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "fail",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "liability-cap": {
+        "status": "pass"
+      },
+      "termination-notice": {
+        "status": "pass"
+      },
+      "payment-terms": {
+        "status": "pass"
+      },
+      "gdpr-data-processing": {
+        "status": "pass"
+      },
+      "no-auto-renewal": {
+        "status": "fail",
+        "quote": "renews automatically"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      }
+    }
+  }
+}

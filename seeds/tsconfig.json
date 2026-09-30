@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": { "composite": true, "emitDeclarationOnly": true, "noEmit": false, "outDir": "../node_modules/.tsbuild/seeds" },
+  "include": ["*.ts", "test", "fixtures", "anonymization"],
+  "references": [
+    { "path": "../packages/db" },
+    { "path": "../packages/domain" },
+    { "path": "../packages/test-utils" },
+    { "path": "../packages/llm" },
+    { "path": "../packages/extraction" },
+    { "path": "../packages/anonymization" }
+  ]
+}

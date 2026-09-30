@@ -1,0 +1,37 @@
+{
+  "slug": "employment-ambiguous-ip",
+  "title": "Employment contract: Michał Lewandowski",
+  "type": "Employment",
+  "file": "employment-ambiguous-ip.md",
+  "description": "Two clauses contradict each other on who owns software the employee writes, and neither says which prevails; a human must decide.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "warn",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "ip-assignment": {
+        "status": "unclear",
+        "accept": [
+          "partial"
+        ]
+      },
+      "non-compete-limit": {
+        "status": "pass"
+      },
+      "gdpr-data-processing": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "msa-medium-issues",
+  "title": "MSA with Harbor Analytics LLC",
+  "type": "MSA",
+  "file": "msa-medium-issues.txt",
+  "description": "Only medium rules fail: 90-day payment and EUR 500,000 insurance. Verdict warn.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "warn",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "liability-cap": {
+        "status": "pass"
+      },
+      "termination-notice": {
+        "status": "pass"
+      },
+      "payment-terms": {
+        "status": "fail",
+        "quote": "ninety (90) days"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "ip-assignment": {
+        "status": "pass"
+      },
+      "gdpr-data-processing": {
+        "status": "pass"
+      },
+      "no-auto-renewal": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      },
+      "insurance": {
+        "status": "fail",
+        "accept": [
+          "partial"
+        ],
+        "quote": "EUR 500,000"
+      }
+    }
+  }
+}

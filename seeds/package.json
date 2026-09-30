@@ -1,0 +1,27 @@
+{
+  "name": "@app/seeds",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@app/db": "workspace:*",
+    "@app/domain": "workspace:*",
+    "docx": "^9.7.2",
+    "drizzle-orm": "^0.45.3",
+    "pdf-lib": "^1.17.1",
+    "@app/llm": "workspace:*",
+    "@app/extraction": "workspace:*"
+  },
+  "exports": {
+    "./users": "./users.ts",
+    "./rules": "./rules.ts",
+    "./fixtures": "./fixtures/agreements.ts",
+    "./stub": "./fixtures/stub.ts",
+    "./catalog": "./catalog.ts",
+    "./anonymization": "./anonymization/samples.ts"
+  },
+  "devDependencies": {
+    "@app/test-utils": "workspace:*",
+    "@app/anonymization": "workspace:*"
+  }
+}

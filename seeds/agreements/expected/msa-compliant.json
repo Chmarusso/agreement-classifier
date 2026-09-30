@@ -1,0 +1,46 @@
+{
+  "slug": "msa-compliant",
+  "title": "MSA with Delta Data Engineering B.V.",
+  "type": "MSA",
+  "file": "msa-compliant.pdf",
+  "description": "Every applicable rule is satisfied, including 45-day payment within the 60-day rule.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "pass",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "liability-cap": {
+        "status": "pass"
+      },
+      "termination-notice": {
+        "status": "pass"
+      },
+      "payment-terms": {
+        "status": "pass"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "ip-assignment": {
+        "status": "pass"
+      },
+      "gdpr-data-processing": {
+        "status": "pass"
+      },
+      "no-auto-renewal": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      },
+      "insurance": {
+        "status": "pass"
+      }
+    }
+  }
+}

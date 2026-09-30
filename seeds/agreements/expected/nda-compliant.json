@@ -1,0 +1,31 @@
+{
+  "slug": "nda-compliant",
+  "title": "NDA with Keller Data GmbH",
+  "type": "NDA",
+  "file": "nda-compliant.pdf",
+  "description": "Every applicable rule is satisfied.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "pass",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "liability-cap": {
+        "status": "pass"
+      },
+      "termination-notice": {
+        "status": "pass"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      }
+    }
+  }
+}

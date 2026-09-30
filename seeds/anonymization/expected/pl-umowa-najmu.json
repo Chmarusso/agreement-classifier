@@ -1,0 +1,24 @@
+{
+  "file": "pl-umowa-najmu.md",
+  "slug": "pl-umowa-najmu",
+  "title": "Umowa najmu lokalu mieszkalnego",
+  "type": "Other",
+  "format": "md",
+  "language": "pl",
+  "focus": "Two private persons, a hyphenated surname, a long surname in the instrumental case, the flat's address and land register number.",
+  "mustReplace": [
+    "Joanną Nowak-Kowalską",
+    "Joanna Nowak-Kowalska",
+    "Grzegorzem Brzęczyszczykiewiczem",
+    "Grzegorz Brzęczyszczykiewicz",
+    "Pan Brzęczyszczykiewicz",
+    "ul. Puławska 145/7",
+    "ul. Piotrkowska 101",
+    "ul. Marszałkowskiej 84/92",
+    "85071203468",
+    "78112301577",
+    "86 1240 1023 1111 0000 1234 5678",
+    "WA4M/00123456/7"
+  ],
+  "mustKeep": ["4 200 zł", "8 400 zł", "30 dni", "trzymiesięcznego okresu wypowiedzenia", "Sąd Rejonowy dla Warszawy-Mokotowa"]
+}

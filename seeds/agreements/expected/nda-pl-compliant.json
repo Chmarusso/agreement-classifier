@@ -1,0 +1,31 @@
+{
+  "slug": "nda-pl-compliant",
+  "title": "Umowa o zachowaniu poufności z Wisła Data Solutions S.A.",
+  "type": "NDA",
+  "file": "nda-pl-compliant.md",
+  "description": "Polish NDA with § headings and personal data in every form; every applicable rule is satisfied.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "pass",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "liability-cap": {
+        "status": "pass"
+      },
+      "termination-notice": {
+        "status": "pass"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      }
+    }
+  }
+}

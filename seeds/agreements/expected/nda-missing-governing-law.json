@@ -1,0 +1,31 @@
+{
+  "slug": "nda-missing-governing-law",
+  "title": "NDA with Brightline Research Ltd",
+  "type": "NDA",
+  "file": "nda-missing-governing-law.docx",
+  "description": "No governing-law clause at all (critical rule).",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "fail",
+    "findings": {
+      "governing-law": {
+        "status": "fail"
+      },
+      "liability-cap": {
+        "status": "pass"
+      },
+      "termination-notice": {
+        "status": "pass"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      }
+    }
+  }
+}

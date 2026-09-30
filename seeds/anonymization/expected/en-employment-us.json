@@ -1,0 +1,23 @@
+{
+  "file": "en-employment-us.docx",
+  "slug": "en-employment-us",
+  "title": "Employment Agreement – Jane Doe",
+  "type": "Employment",
+  "format": "docx",
+  "language": "en",
+  "focus": "US style: SSN, date of birth, passport, corporate card, US address and phone.",
+  "mustReplace": [
+    "Jane Doe",
+    "Ms Doe",
+    "Robert Chen",
+    "March 3, 1990",
+    "1600 Amphitheatre Parkway",
+    "CA 94043",
+    "536-22-1234",
+    "563891247",
+    "4111 1111 1111 1111",
+    "jane.doe@mail.example",
+    "+1 (415) 555-0100"
+  ],
+  "mustKeep": ["USD 165,000", "three (3) years", "January 4, 2027", "laws of Poland", "Senior Data Engineer"]
+}

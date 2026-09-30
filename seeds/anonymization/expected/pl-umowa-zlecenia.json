@@ -1,0 +1,29 @@
+{
+  "file": "pl-umowa-zlecenia.docx",
+  "slug": "pl-umowa-zlecenia",
+  "title": "Umowa zlecenia – Katarzyna Zając",
+  "type": "Other",
+  "format": "docx",
+  "language": "pl",
+  "focus": "A private person as the contractor: PESEL, ID card, date of birth, bank account, and the name in five grammatical cases.",
+  "mustReplace": [
+    "Katarzyną Zając",
+    "Katarzynie Zając",
+    "Katarzyny Zając",
+    "Katarzyna Zając",
+    "Pani Zając",
+    "Tomasza Wiśniewskiego",
+    "Tomasz Wiśniewski",
+    "92031507849",
+    "AYW952341",
+    "15.03.1992",
+    "ul. Floriańska 20/4",
+    "PL81 1050 1445 1000 0022 7463 5201",
+    "k.zajac@poczta.example",
+    "600-700-800",
+    "+48 22 628 11 22",
+    "5260250274",
+    "0000123456"
+  ],
+  "mustKeep": ["8 500 zł", "2 października 2026", "14 dni", "trzy (3) lata", "prawu polskiemu", "§ 4. Poufność", "Northwind Analytics"]
+}

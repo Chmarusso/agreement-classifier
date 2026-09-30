@@ -1,0 +1,34 @@
+{
+  "slug": "nda-missing-signature-titles",
+  "title": "NDA with Fjord Metrics AS",
+  "type": "NDA",
+  "file": "nda-missing-signature-titles.md",
+  "description": "Signature block names people but not their titles (low rule), so the verdict is warn.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "warn",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "liability-cap": {
+        "status": "pass"
+      },
+      "termination-notice": {
+        "status": "pass"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "fail",
+        "accept": [
+          "partial"
+        ]
+      }
+    }
+  }
+}

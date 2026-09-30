@@ -1,0 +1,51 @@
+{
+  "slug": "long-msa-deep-medium-issues",
+  "title": "MSA with Orbital Systems Integration S.A.",
+  "type": "MSA",
+  "file": "long-msa-deep-medium-issues.pdf",
+  "description": "Long MSA. The body defers payment and insurance to the schedules; Schedule 2 sets 75-day payment and Schedule 4 only EUR 250,000 of professional indemnity cover. Both medium rules fail, so the verdict is warn.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "warn",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "liability-cap": {
+        "status": "pass"
+      },
+      "termination-notice": {
+        "status": "pass"
+      },
+      "payment-terms": {
+        "status": "fail",
+        "quote": "seventy-five (75) days"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "ip-assignment": {
+        "status": "pass"
+      },
+      "gdpr-data-processing": {
+        "status": "pass"
+      },
+      "no-auto-renewal": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      },
+      "insurance": {
+        "status": "fail",
+        "accept": [
+          "partial"
+        ],
+        "quote": "EUR 250,000"
+      }
+    }
+  }
+}

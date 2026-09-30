@@ -1,0 +1,19 @@
+{
+  "file": "bilingual-service-agreement.md",
+  "slug": "bilingual-service-agreement",
+  "title": "Umowa o świadczenie usług / Service Agreement",
+  "type": "MSA",
+  "format": "md",
+  "language": "pl",
+  "focus": "Bilingual Polish/English text: the same people and numbers must get the same placeholder in both languages.",
+  "mustReplace": [
+    "Baltic Code sp. z o.o.",
+    "Marka Zielińskiego",
+    "Marek Zieliński",
+    "Olga Kamińska",
+    "olga.kaminska@balticcode.example",
+    "9510021388",
+    "PL86 1240 1023 1111 0000 1234 5678"
+  ],
+  "mustKeep": ["30 000 zł", "PLN 30,000", "45 dni", "laws of Poland", "prawu polskiemu", "Northwind Analytics"]
+}

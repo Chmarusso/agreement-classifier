@@ -1,0 +1,35 @@
+{
+  "slug": "employment-pl-noncompete-too-long",
+  "title": "Umowa o pracę: Katarzyna Zając",
+  "type": "Employment",
+  "file": "employment-pl-noncompete-too-long.docx",
+  "description": "Polish employment contract with a 12-month non-compete against a 6-month limit, and the employee's PESEL and bank account.",
+  "expected": {
+    "extraction": "extracted",
+    "verdict": "fail",
+    "findings": {
+      "governing-law": {
+        "status": "pass"
+      },
+      "confidentiality-term": {
+        "status": "pass"
+      },
+      "ip-assignment": {
+        "status": "pass"
+      },
+      "non-compete-limit": {
+        "status": "fail",
+        "quote": "dwanaście (12) miesięcy"
+      },
+      "gdpr-data-processing": {
+        "status": "pass"
+      },
+      "dispute-resolution": {
+        "status": "pass"
+      },
+      "signature-authority": {
+        "status": "pass"
+      }
+    }
+  }
+}
