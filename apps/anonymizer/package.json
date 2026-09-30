@@ -1,0 +1,8 @@
+{
+  "name": "@app/anonymizer",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m anonymizer.server",
+    "test": "python3 -m unittest discover -s tests -t ."
+  }
+}

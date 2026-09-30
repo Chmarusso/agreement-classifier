@@ -1,0 +1,26 @@
+{
+  "name": "@app/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cd ../.. && bun --watch apps/api/src/index.ts",
+    "start": "bun src/index.ts"
+  },
+  "dependencies": {
+    "@app/anonymization": "workspace:*",
+    "@app/contracts": "workspace:*",
+    "@app/db": "workspace:*",
+    "@app/domain": "workspace:*",
+    "@app/extraction": "workspace:*",
+    "@app/llm": "workspace:*",
+    "drizzle-orm": "^0.45.3",
+    "hono": "^4.13.9",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@app/test-utils": "workspace:*",
+    "@app/seeds": "workspace:*",
+    "@app/worker": "workspace:*"
+  }
+}

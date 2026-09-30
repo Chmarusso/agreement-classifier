@@ -1,0 +1,26 @@
+{
+  "name": "@app/worker",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cd ../.. && bun --watch apps/worker/src/index.ts",
+    "start": "bun src/index.ts"
+  },
+  "dependencies": {
+    "@app/anonymization": "workspace:*",
+    "@app/db": "workspace:*",
+    "@app/domain": "workspace:*",
+    "@app/extraction": "workspace:*",
+    "@app/llm": "workspace:*",
+    "@app/seeds": "workspace:*",
+    "drizzle-orm": "^0.45.3"
+  },
+  "devDependencies": {
+    "@app/test-utils": "workspace:*"
+  },
+  "exports": {
+    "./worker": "./src/worker.ts",
+    "./handlers": "./src/handlers.ts"
+  }
+}

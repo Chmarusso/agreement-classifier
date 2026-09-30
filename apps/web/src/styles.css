@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* YourCompany brand: orange primary, dark grey text, white surfaces, 2px corners, no shadows. */
+@theme {
+  --font-sans: "YourCompany", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --color-ink: #333333;
+  --color-muted: #6b6b6b;
+  --color-line: #e4e4e4;
+  --color-canvas: #f7f7f7;
+  --color-brand: #ff5a00;
+  --color-brand-hover: #ff4800;
+  --color-link: #f04d3f;
+  --color-accent: #2f7a5b;
+  --color-danger: #b42318;
+  --color-danger-soft: #fef3f2;
+  --color-warn: #b54708;
+  --color-warn-soft: #fffaeb;
+  --radius-sm: 2px;
+  --radius-md: 2px;
+  --radius-lg: 2px;
+  --radius-xl: 2px;
+  --radius-2xl: 4px;
+  --radius-3xl: 4px;
+  --radius-4xl: 4px;
+}
+
+html,
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

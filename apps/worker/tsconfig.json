@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "composite": true, "emitDeclarationOnly": true, "noEmit": false, "outDir": "../../node_modules/.tsbuild/worker" },
+  "include": ["src", "test"],
+  "references": [
+    { "path": "../../packages/anonymization" },
+    { "path": "../../seeds" },
+    { "path": "../../packages/llm" },
+    { "path": "../../packages/extraction" },
+    { "path": "../../packages/db" },
+    { "path": "../../packages/domain" },
+    { "path": "../../packages/test-utils" }
+  ]
+}
