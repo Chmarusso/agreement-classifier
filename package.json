@@ -1,0 +1,40 @@
+{
+  "name": "audit-agreements",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "seeds",
+    "evals"
+  ],
+  "scripts": {
+    "dev": "bun run --filter './apps/*' dev",
+    "dev:api": "bun run --filter @app/api dev",
+    "dev:worker": "bun run --filter @app/worker dev",
+    "dev:web": "bun run --filter @app/web dev",
+    "dev:anonymizer": "bun run --filter @app/anonymizer dev",
+    "db:up": "docker compose -f docker-compose.dev.yml up -d --wait postgres",
+    "db:generate": "bun run --filter @app/db generate",
+    "db:migrate": "bun run packages/db/src/cli/migrate.ts",
+    "db:rebuild": "bun run packages/db/src/cli/rebuild.ts",
+    "seed": "bun run seeds/seed.ts",
+    "typecheck": "tsc -b",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "test": "bun test",
+    "test:unit": "bun test packages/domain",
+    "test:anonymizer": "cd apps/anonymizer && python3 -m unittest discover -s tests -t .",
+    "build:web": "bun run --filter @app/web build",
+    "eval": "bun run evals/run.ts",
+    "fixtures:build": "bun run seeds/fixtures/build.ts",
+    "bridge": "bun run apps/claude-bridge/src/index.ts",
+    "anonymize": "bun run packages/anonymization/src/cli.ts",
+    "samples:build": "bun run seeds/anonymization/build.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.14",
+    "@types/bun": "^1.4.2",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/domain" },
+    { "path": "packages/llm" },
+    { "path": "packages/extraction" },
+    { "path": "packages/anonymization" },
+    { "path": "packages/contracts" },
+    { "path": "packages/db" },
+    { "path": "packages/test-utils" },
+    { "path": "apps/api" },
+    { "path": "apps/worker" },
+    { "path": "apps/claude-bridge" },
+    { "path": "apps/web" },
+    { "path": "seeds" },
+    { "path": "evals" }
+  ]
+}

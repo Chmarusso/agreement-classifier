@@ -1,0 +1,95 @@
+# Full stack. The Claude bridge (milestone 4) runs on the host, never here.
+name: audit-agreements
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: audit
+      POSTGRES_PASSWORD: audit
+      POSTGRES_DB: audit
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U audit -d audit"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  api:
+    build: { context: ., dockerfile: apps/api/Dockerfile }
+    environment:
+      APP_ENV: ${APP_ENV:-development}
+      DATABASE_URL: postgres://audit:audit@postgres:5432/audit
+      AUTH_SECRET: ${AUTH_SECRET:-change-me-in-production}
+      DEV_OTP_CODE: ${DEV_OTP_CODE:-000000}
+      BOOTSTRAP_ADMIN_EMAIL: ${BOOTSTRAP_ADMIN_EMAIL:-admin@example.com}
+      API_PORT: 3000
+      STORAGE_DIR: /data/uploads
+      LLM_PROVIDER: ${LLM_PROVIDER:-}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      OPENROUTER_MODEL: ${OPENROUTER_MODEL:-deepseek/deepseek-v4-flash-0731}
+      OPENROUTER_REASONING: ${OPENROUTER_REASONING:-off}
+      CLAUDE_MODEL: ${CLAUDE_MODEL:-opus}
+      # Same model settings as the worker, so the admin settings page reports the providers the worker can run.
+      CLAUDE_BRIDGE_URL: ${CLAUDE_BRIDGE_URL:-http://host.docker.internal:8787}
+      CLAUDE_BRIDGE_TOKEN: ${CLAUDE_BRIDGE_TOKEN:-}
+    volumes:
+      - uploads:/data/uploads
+    depends_on:
+      postgres: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "bun", "-e", "const r = await fetch('http://localhost:3000/api/v1/health'); process.exit(r.status < 500 ? 0 : 1)"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  # Local PII anonymizer. Agreement text reaches a model only after passing through it.
+  # WITH_NER=1 adds spaCy name recognition for Polish and English (larger image).
+  anonymizer:
+    build:
+      context: .
+      dockerfile: apps/anonymizer/Dockerfile
+      args:
+        WITH_NER: ${ANONYMIZER_WITH_NER:-0}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8090/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  worker:
+    build: { context: ., dockerfile: apps/worker/Dockerfile }
+    environment:
+      DATABASE_URL: postgres://audit:audit@postgres:5432/audit
+      STORAGE_DIR: /data/uploads
+      # Default: OpenRouter when a key is set, else the stub. For Claude, run
+      # `bun run bridge` on the host and set LLM_PROVIDER=claude-bridge.
+      LLM_PROVIDER: ${LLM_PROVIDER:-}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      OPENROUTER_MODEL: ${OPENROUTER_MODEL:-deepseek/deepseek-v4-flash-0731}
+      OPENROUTER_REASONING: ${OPENROUTER_REASONING:-off}
+      CLAUDE_MODEL: ${CLAUDE_MODEL:-opus}
+      CLAUDE_BRIDGE_URL: ${CLAUDE_BRIDGE_URL:-http://host.docker.internal:8787}
+      CLAUDE_BRIDGE_TOKEN: ${CLAUDE_BRIDGE_TOKEN:-}
+      # Empty ANONYMIZER_URL turns anonymization off.
+      ANONYMIZER_URL: ${ANONYMIZER_URL-http://anonymizer:8090}
+      ANONYMIZER_KEEP: ${ANONYMIZER_KEEP:-Northwind Analytics}
+    volumes:
+      - uploads:/data/uploads
+      - ./.run:/run/claude
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      api: { condition: service_healthy }
+      anonymizer: { condition: service_healthy }
+
+  web:
+    build: { context: ., dockerfile: apps/web/Dockerfile }
+    ports:
+      - "${WEB_PORT:-8080}:8080"
+    depends_on:
+      api: { condition: service_healthy }
+
+volumes:
+  pgdata:
+  uploads:
